@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  font-family: 'Inter', 'Noto Sans JP', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+.card {
+  @apply rounded-xl shadow-lg bg-white p-8 transition-all duration-300 hover:shadow-2xl;
+}
+
+.btn-primary {
+  @apply bg-gradient-to-r from-accent to-blue-500 text-white font-bold py-4 px-8 rounded-full shadow-lg hover:from-blue-600 hover:to-accent hover:scale-105 transition-all duration-300;
+}
+
+.cta-gradient {
+  background: linear-gradient(90deg, #4299e1 0%, #1a365d 100%);
+} 
