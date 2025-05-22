@@ -24,9 +24,7 @@ export default function Hero() {
             チームで売上を最大化する新しい仕組みを、今すぐ体験しませんか？
           </motion.p>
           <motion.a
-            href="https://forms.gle/M4KJCoBpgJakffaP7"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#cta"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: [1, 1.08, 1] }}
             transition={{ duration: 1.2, delay: 0.4, repeat: Infinity, repeatType: 'reverse', ease: 'easeInOut' }}
@@ -41,7 +39,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}
           className="w-full md:w-1/2 flex justify-center"
         >
-          <img src="/banner.png" alt="SL.AI Team Base Todo app バナー" className="w-full max-w-2xl h-auto rounded-xl shadow-2xl border-4 border-white/20" />
+          <img src="/TeamBase_CR-10.png" alt="SL.AI Team Base Todo app バナー" className="w-full max-w-2xl h-auto rounded-xl shadow-2xl border-4 border-white/20" />
         </motion.div>
       </div>
       <div className="absolute left-0 right-0 bottom-0 h-32 bg-gradient-to-t from-white/80 to-transparent pointer-events-none" />
