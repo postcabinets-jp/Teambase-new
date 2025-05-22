@@ -31,7 +31,9 @@ export default function CTA() {
           className="flex justify-center"
         >
           <a
-            href="#contact"
+            href="https://forms.gle/M4KJCoBpgJakffaP7"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-primary text-xl px-12 py-5"
           >
             今すぐ資料請求 ▶

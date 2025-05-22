@@ -15,7 +15,7 @@ export default function Header() {
           <a href="#pitfall" className="hover:text-accent transition">よくある失敗</a>
           <a href="#faq" className="hover:text-accent transition">よくある質問</a>
         </nav>
-        <Link href="#cta" className="ml-4 bg-accent text-white px-5 py-2 rounded-full font-bold shadow hover:bg-blue-600 transition-all">資料請求</Link>
+        <a href="https://forms.gle/M4KJCoBpgJakffaP7" target="_blank" rel="noopener noreferrer" className="ml-4 bg-accent text-white px-5 py-2 rounded-full font-bold shadow hover:bg-blue-600 transition-all">資料請求</a>
       </div>
     </header>
   )

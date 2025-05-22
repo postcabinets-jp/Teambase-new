@@ -24,7 +24,9 @@ export default function Hero() {
             チームで売上を最大化する新しい仕組みを、今すぐ体験しませんか？
           </motion.p>
           <motion.a
-            href="#cta"
+            href="https://forms.gle/M4KJCoBpgJakffaP7"
+            target="_blank"
+            rel="noopener noreferrer"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: [1, 1.08, 1] }}
             transition={{ duration: 1.2, delay: 0.4, repeat: Infinity, repeatType: 'reverse', ease: 'easeInOut' }}
