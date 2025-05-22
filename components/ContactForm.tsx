@@ -12,7 +12,7 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     try {
-      await fetch('https://script.google.com/macros/s/AKfycbwMVmGREBFSDTdRRRII3QZSy74_kOAWgiGLcYvX0WaL/dev', {
+      await fetch('https://script.google.com/macros/s/AKfycbylWt_g2lmngNi4SbzuM8aqxjplCpkycFMoitcjh8TaHiVZHGx4rXzB5TOItf2hOMg32Q/exec', {
         method: 'POST',
         body: JSON.stringify(formData),
         headers: {
