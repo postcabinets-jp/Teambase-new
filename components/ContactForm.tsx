@@ -11,14 +11,18 @@ export default function ContactForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    await fetch('https://script.google.com/macros/s/AKfycbzIOPOWzrTlTJZD9Lw-_GSqvuXvuK2caT6HCjyNeh0ACGUBPcAV8IkS4YKBr8xEnfaYjw/exec', {
-      method: 'POST',
-      body: JSON.stringify(formData),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    })
-    alert('送信が完了しました')
+    try {
+      await fetch('https://script.google.com/macros/s/AKfycbwMVmGREBFSDTdRRRII3QZSy74_kOAWgiGLcYvX0WaL/dev', {
+        method: 'POST',
+        body: JSON.stringify(formData),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
+      window.location.href = 'https://school.addness.co.jp/p/VN9zsz2DZgDM'
+    } catch (error) {
+      alert('送信に失敗しました。時間をおいて再度お試しください。')
+    }
   }
 
   return (
